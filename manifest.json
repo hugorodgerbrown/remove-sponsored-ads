@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Sponsored Ads",
+  "version": "1.0.3",
+  "description": "Remove sponsored ads from a Google search results page.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/search*"],
+      "js": ["script.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
